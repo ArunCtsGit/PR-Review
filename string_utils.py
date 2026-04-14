@@ -25,3 +25,9 @@ if __name__ == "__main__":
     print(f"Vowels in 'hello world': {count_vowels('hello world')}")
     print(f"Is 'racecar' palindrome: {is_palindrome('racecar')}")
     print(f"Capitalize 'hello world': {capitalize_words('hello world')}")
+
+
+def truncate(s, max_length, suffix="..."):
+    if len(s) <= max_length:
+        return s
+    return s[:max_length - len(suffix)] + suffix
